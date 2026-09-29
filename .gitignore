@@ -1,0 +1,16 @@
+# Backend
+backend/target/
+backend/.mvn/
+!backend/.mvn/wrapper/
+*.class
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store

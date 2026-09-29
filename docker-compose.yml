@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: inventory-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: your_password
+      MYSQL_DATABASE: inventorydb
+    ports:
+      - "3306:3306"
+    volumes:
+      - inventory_mysql_data:/var/lib/mysql
+
+volumes:
+  inventory_mysql_data:
